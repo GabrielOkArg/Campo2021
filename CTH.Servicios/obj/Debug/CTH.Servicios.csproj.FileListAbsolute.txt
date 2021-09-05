@@ -1,0 +1,5 @@
+D:\Project\Trabajo de campo\CTH\CTH\CTH.Servicios\bin\Debug\CTH.Servicios.dll
+D:\Project\Trabajo de campo\CTH\CTH\CTH.Servicios\bin\Debug\CTH.Servicios.pdb
+D:\Project\Trabajo de campo\CTH\CTH\CTH.Servicios\obj\Debug\CTH.Servicios.csproj.CoreCompileInputs.cache
+D:\Project\Trabajo de campo\CTH\CTH\CTH.Servicios\obj\Debug\CTH.Servicios.dll
+D:\Project\Trabajo de campo\CTH\CTH\CTH.Servicios\obj\Debug\CTH.Servicios.pdb

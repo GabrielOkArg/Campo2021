@@ -1,0 +1,10 @@
+D:\Project\Trabajo de campo\CTH\CTH\CTH\bin\Debug\CTH.exe.config
+D:\Project\Trabajo de campo\CTH\CTH\CTH\bin\Debug\CTH.exe
+D:\Project\Trabajo de campo\CTH\CTH\CTH\bin\Debug\CTH.pdb
+D:\Project\Trabajo de campo\CTH\CTH\CTH\obj\Debug\CTH.csprojAssemblyReference.cache
+D:\Project\Trabajo de campo\CTH\CTH\CTH\obj\Debug\CTH.Properties.Resources.resources
+D:\Project\Trabajo de campo\CTH\CTH\CTH\obj\Debug\CTH.csproj.GenerateResource.cache
+D:\Project\Trabajo de campo\CTH\CTH\CTH\obj\Debug\CTH.csproj.CoreCompileInputs.cache
+D:\Project\Trabajo de campo\CTH\CTH\CTH\obj\Debug\CTH.exe
+D:\Project\Trabajo de campo\CTH\CTH\CTH\obj\Debug\CTH.pdb
+D:\Project\Trabajo de campo\CTH\CTH\CTH\obj\Debug\CTH.Frm_Login.resources

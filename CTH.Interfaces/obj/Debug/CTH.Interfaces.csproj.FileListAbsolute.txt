@@ -1,0 +1,5 @@
+D:\Project\Trabajo de campo\CTH\CTH\CTH.Interfaces\bin\Debug\CTH.Interfaces.dll
+D:\Project\Trabajo de campo\CTH\CTH\CTH.Interfaces\bin\Debug\CTH.Interfaces.pdb
+D:\Project\Trabajo de campo\CTH\CTH\CTH.Interfaces\obj\Debug\CTH.Interfaces.csproj.CoreCompileInputs.cache
+D:\Project\Trabajo de campo\CTH\CTH\CTH.Interfaces\obj\Debug\CTH.Interfaces.dll
+D:\Project\Trabajo de campo\CTH\CTH\CTH.Interfaces\obj\Debug\CTH.Interfaces.pdb

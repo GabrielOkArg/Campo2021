@@ -1,0 +1,6 @@
+D:\Project\Trabajo de campo\CTH\CTH\CTH.BLL\bin\Debug\CTH.BLL.dll
+D:\Project\Trabajo de campo\CTH\CTH\CTH.BLL\bin\Debug\CTH.BLL.pdb
+D:\Project\Trabajo de campo\CTH\CTH\CTH.BLL\obj\Debug\CTH.BLL.csprojAssemblyReference.cache
+D:\Project\Trabajo de campo\CTH\CTH\CTH.BLL\obj\Debug\CTH.BLL.csproj.CoreCompileInputs.cache
+D:\Project\Trabajo de campo\CTH\CTH\CTH.BLL\obj\Debug\CTH.BLL.dll
+D:\Project\Trabajo de campo\CTH\CTH\CTH.BLL\obj\Debug\CTH.BLL.pdb
