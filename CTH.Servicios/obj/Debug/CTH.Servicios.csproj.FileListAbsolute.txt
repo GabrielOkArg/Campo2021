@@ -1,5 +1,11 @@
 D:\Project\Trabajo de campo\CTH\CTH\CTH.Servicios\bin\Debug\CTH.Servicios.dll
 D:\Project\Trabajo de campo\CTH\CTH\CTH.Servicios\bin\Debug\CTH.Servicios.pdb
+D:\Project\Trabajo de campo\CTH\CTH\CTH.Servicios\bin\Debug\CTH.BE.dll
+D:\Project\Trabajo de campo\CTH\CTH\CTH.Servicios\bin\Debug\CTH.DAL.dll
+D:\Project\Trabajo de campo\CTH\CTH\CTH.Servicios\bin\Debug\CTH.BE.pdb
+D:\Project\Trabajo de campo\CTH\CTH\CTH.Servicios\bin\Debug\CTH.DAL.pdb
+D:\Project\Trabajo de campo\CTH\CTH\CTH.Servicios\obj\Debug\CTH.Servicios.csprojAssemblyReference.cache
 D:\Project\Trabajo de campo\CTH\CTH\CTH.Servicios\obj\Debug\CTH.Servicios.csproj.CoreCompileInputs.cache
+D:\Project\Trabajo de campo\CTH\CTH\CTH.Servicios\obj\Debug\CTH.Servicios.csproj.CopyComplete
 D:\Project\Trabajo de campo\CTH\CTH\CTH.Servicios\obj\Debug\CTH.Servicios.dll
 D:\Project\Trabajo de campo\CTH\CTH\CTH.Servicios\obj\Debug\CTH.Servicios.pdb

@@ -41,9 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="AssistanSession.cs" />
     <Compile Include="Encriptacion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CTH.BE\CTH.BE.csproj">
+      <Project>{7b0a9fd8-8a8a-48ab-9fdc-fa81545143cd}</Project>
+      <Name>CTH.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CTH.DAL\CTH.DAL.csproj">
+      <Project>{543a8503-dbf9-42d8-86d1-0fbeeb88f28a}</Project>
+      <Name>CTH.DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

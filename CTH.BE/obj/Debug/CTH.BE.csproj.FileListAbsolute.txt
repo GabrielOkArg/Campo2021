@@ -1,6 +1,5 @@
 D:\Project\Trabajo de campo\CTH\CTH\CTH.BE\bin\Debug\CTH.BE.dll
 D:\Project\Trabajo de campo\CTH\CTH\CTH.BE\bin\Debug\CTH.BE.pdb
-D:\Project\Trabajo de campo\CTH\CTH\CTH.BE\obj\Debug\CTH.BE.csprojAssemblyReference.cache
 D:\Project\Trabajo de campo\CTH\CTH\CTH.BE\obj\Debug\CTH.BE.csproj.CoreCompileInputs.cache
 D:\Project\Trabajo de campo\CTH\CTH\CTH.BE\obj\Debug\CTH.BE.dll
 D:\Project\Trabajo de campo\CTH\CTH\CTH.BE\obj\Debug\CTH.BE.pdb

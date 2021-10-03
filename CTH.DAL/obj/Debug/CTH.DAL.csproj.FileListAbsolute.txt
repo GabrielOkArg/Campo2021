@@ -1,6 +1,9 @@
 D:\Project\Trabajo de campo\CTH\CTH\CTH.DAL\bin\Debug\CTH.DAL.dll
 D:\Project\Trabajo de campo\CTH\CTH\CTH.DAL\bin\Debug\CTH.DAL.pdb
+D:\Project\Trabajo de campo\CTH\CTH\CTH.DAL\bin\Debug\CTH.BE.dll
+D:\Project\Trabajo de campo\CTH\CTH\CTH.DAL\bin\Debug\CTH.BE.pdb
 D:\Project\Trabajo de campo\CTH\CTH\CTH.DAL\obj\Debug\CTH.DAL.csprojAssemblyReference.cache
 D:\Project\Trabajo de campo\CTH\CTH\CTH.DAL\obj\Debug\CTH.DAL.csproj.CoreCompileInputs.cache
+D:\Project\Trabajo de campo\CTH\CTH\CTH.DAL\obj\Debug\CTH.DAL.csproj.CopyComplete
 D:\Project\Trabajo de campo\CTH\CTH\CTH.DAL\obj\Debug\CTH.DAL.dll
 D:\Project\Trabajo de campo\CTH\CTH\CTH.DAL\obj\Debug\CTH.DAL.pdb
