@@ -19,9 +19,17 @@ namespace CTH.Servicios
         {
             get
             {
-                if (_session == null) throw new Exception("Sesión no iniciada");
+                try
+                {
+                    //if (_session == null) throw new FalloLoginException("Sesión no iniciada");
 
-                return _session;
+                    return _session;
+                }
+                catch (Exception)
+                {
+                    throw new FalloLoginException("Sesión no iniciada");
+
+                }
             }
         }
 

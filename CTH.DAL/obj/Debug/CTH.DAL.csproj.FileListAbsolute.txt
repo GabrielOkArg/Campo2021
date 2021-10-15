@@ -7,3 +7,12 @@ D:\Project\Trabajo de campo\CTH\CTH\CTH.DAL\obj\Debug\CTH.DAL.csproj.CoreCompile
 D:\Project\Trabajo de campo\CTH\CTH\CTH.DAL\obj\Debug\CTH.DAL.csproj.CopyComplete
 D:\Project\Trabajo de campo\CTH\CTH\CTH.DAL\obj\Debug\CTH.DAL.dll
 D:\Project\Trabajo de campo\CTH\CTH\CTH.DAL\obj\Debug\CTH.DAL.pdb
+C:\Projects\Campo2021\CTH.DAL\bin\Debug\CTH.DAL.dll
+C:\Projects\Campo2021\CTH.DAL\bin\Debug\CTH.DAL.pdb
+C:\Projects\Campo2021\CTH.DAL\bin\Debug\CTH.BE.dll
+C:\Projects\Campo2021\CTH.DAL\bin\Debug\CTH.BE.pdb
+C:\Projects\Campo2021\CTH.DAL\obj\Debug\CTH.DAL.csproj.AssemblyReference.cache
+C:\Projects\Campo2021\CTH.DAL\obj\Debug\CTH.DAL.csproj.CoreCompileInputs.cache
+C:\Projects\Campo2021\CTH.DAL\obj\Debug\CTH.DAL.csproj.CopyComplete
+C:\Projects\Campo2021\CTH.DAL\obj\Debug\CTH.DAL.dll
+C:\Projects\Campo2021\CTH.DAL\obj\Debug\CTH.DAL.pdb

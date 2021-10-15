@@ -18,8 +18,8 @@ namespace CTH.DAL
 
         public Usuario GetElement(Usuario _element)
         {
-            List<Usuario> listado = new List<Usuario>();
-            string sqlstring = "Data Source=DESKTOP-N6CNO7F\\SQLEXPRESS;Initial Catalog=CTH_INT;Integrated Security=True";
+        
+            string sqlstring = "Data Source=EDUARDOSILVA1\\SQLEXPRESS01;Initial Catalog=CTH_INT;Integrated Security=True";
             using (SqlConnection conn = new SqlConnection(sqlstring))
 
             {
@@ -32,10 +32,17 @@ namespace CTH.DAL
                 conn.Open();
                 da.Fill(dataTable);
                 conn.Close();
-                _element.apellido = dataTable.Rows[0].ItemArray[2].ToString();
-                _element.nombre = dataTable.Rows[0].ItemArray[1].ToString();
-                _element.id = Convert.ToInt32( dataTable.Rows[0].ItemArray[0]);
-                _element.pass = dataTable.Rows[0].ItemArray[4].ToString();
+                if (dataTable.Rows.Count > 0)
+                {
+                    _element.apellido = dataTable.Rows[0].ItemArray[2].ToString();
+                    _element.nombre = dataTable.Rows[0].ItemArray[1].ToString();
+                    _element.id = Convert.ToInt32(dataTable.Rows[0].ItemArray[0]);
+                    _element.pass = dataTable.Rows[0].ItemArray[4].ToString();
+                }
+                else
+                {
+                    _element = null;
+                }
             }
             return _element;
             

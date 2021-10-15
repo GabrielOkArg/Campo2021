@@ -17,6 +17,7 @@ namespace CTH
         {
             InitializeComponent();
             IsMdiContainer = true;
+            cerrarSesionToolStripMenuItem.Visible = false;
         }
 
         private void iniciarSesionToolStripMenuItem_Click(object sender, EventArgs e)
@@ -33,8 +34,31 @@ namespace CTH
 
         public void Validar()
         {
-            lbl_usuarioconectado.Text = SessionManager.GetInstance.Usuario.nombre;
-            lbl_usuarioconectado.Visible = true;
+            if (SessionManager.GetInstance != null)
+            {
+
+                lbl_usuarioconectado.Text = SessionManager.GetInstance.Usuario.nombre + " " + SessionManager.GetInstance.Usuario.apellido;
+                lbl_usuarioconectado.Visible = true;
+                iniciarSesionToolStripMenuItem.Visible = false;
+                cerrarSesionToolStripMenuItem.Visible = true;
+            }
+            else
+            {
+                lbl_usuarioconectado.Text = "";
+            }
+        }
+
+        private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SessionManager.Logout();
+            cerrarSesionToolStripMenuItem.Visible = false;
+            iniciarSesionToolStripMenuItem.Visible = true;
+            lbl_usuarioconectado.Text = "";
+        }
+
+        private void lbl_usuarioconectado_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

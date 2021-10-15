@@ -4,3 +4,16 @@ D:\Project\Trabajo de campo\CTH\CTH\CTH.BLL\obj\Debug\CTH.BLL.csprojAssemblyRefe
 D:\Project\Trabajo de campo\CTH\CTH\CTH.BLL\obj\Debug\CTH.BLL.csproj.CoreCompileInputs.cache
 D:\Project\Trabajo de campo\CTH\CTH\CTH.BLL\obj\Debug\CTH.BLL.dll
 D:\Project\Trabajo de campo\CTH\CTH\CTH.BLL\obj\Debug\CTH.BLL.pdb
+C:\Projects\Campo2021\CTH.BLL\bin\Debug\CTH.BLL.dll
+C:\Projects\Campo2021\CTH.BLL\bin\Debug\CTH.BLL.pdb
+C:\Projects\Campo2021\CTH.BLL\bin\Debug\CTH.BE.dll
+C:\Projects\Campo2021\CTH.BLL\bin\Debug\CTH.DAL.dll
+C:\Projects\Campo2021\CTH.BLL\bin\Debug\CTH.Servicios.dll
+C:\Projects\Campo2021\CTH.BLL\bin\Debug\CTH.BE.pdb
+C:\Projects\Campo2021\CTH.BLL\bin\Debug\CTH.DAL.pdb
+C:\Projects\Campo2021\CTH.BLL\bin\Debug\CTH.Servicios.pdb
+C:\Projects\Campo2021\CTH.BLL\obj\Debug\CTH.BLL.csproj.AssemblyReference.cache
+C:\Projects\Campo2021\CTH.BLL\obj\Debug\CTH.BLL.csproj.CoreCompileInputs.cache
+C:\Projects\Campo2021\CTH.BLL\obj\Debug\CTH.BLL.csproj.CopyComplete
+C:\Projects\Campo2021\CTH.BLL\obj\Debug\CTH.BLL.dll
+C:\Projects\Campo2021\CTH.BLL\obj\Debug\CTH.BLL.pdb

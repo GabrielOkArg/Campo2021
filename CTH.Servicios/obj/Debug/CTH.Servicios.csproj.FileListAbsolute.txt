@@ -9,3 +9,14 @@ D:\Project\Trabajo de campo\CTH\CTH\CTH.Servicios\obj\Debug\CTH.Servicios.csproj
 D:\Project\Trabajo de campo\CTH\CTH\CTH.Servicios\obj\Debug\CTH.Servicios.csproj.CopyComplete
 D:\Project\Trabajo de campo\CTH\CTH\CTH.Servicios\obj\Debug\CTH.Servicios.dll
 D:\Project\Trabajo de campo\CTH\CTH\CTH.Servicios\obj\Debug\CTH.Servicios.pdb
+C:\Projects\Campo2021\CTH.Servicios\bin\Debug\CTH.Servicios.dll
+C:\Projects\Campo2021\CTH.Servicios\bin\Debug\CTH.Servicios.pdb
+C:\Projects\Campo2021\CTH.Servicios\bin\Debug\CTH.BE.dll
+C:\Projects\Campo2021\CTH.Servicios\bin\Debug\CTH.DAL.dll
+C:\Projects\Campo2021\CTH.Servicios\bin\Debug\CTH.BE.pdb
+C:\Projects\Campo2021\CTH.Servicios\bin\Debug\CTH.DAL.pdb
+C:\Projects\Campo2021\CTH.Servicios\obj\Debug\CTH.Servicios.csproj.AssemblyReference.cache
+C:\Projects\Campo2021\CTH.Servicios\obj\Debug\CTH.Servicios.csproj.CoreCompileInputs.cache
+C:\Projects\Campo2021\CTH.Servicios\obj\Debug\CTH.Servicios.csproj.CopyComplete
+C:\Projects\Campo2021\CTH.Servicios\obj\Debug\CTH.Servicios.dll
+C:\Projects\Campo2021\CTH.Servicios\obj\Debug\CTH.Servicios.pdb
