@@ -41,8 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Componente.cs" />
+    <Compile Include="Equipo.cs" />
+    <Compile Include="Familia.cs" />
+    <Compile Include="Orden.cs" />
+    <Compile Include="Patente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sector.cs" />
+    <Compile Include="TipoPermiso.cs" />
+    <Compile Include="TipoUrgencia.cs" />
     <Compile Include="Usuario.cs" />
+    <Compile Include="UsuarioView.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

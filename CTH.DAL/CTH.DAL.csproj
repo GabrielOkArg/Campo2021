@@ -42,6 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IConectBD.cs" />
+    <Compile Include="mapperEquipo.cs" />
+    <Compile Include="mapperOrden.cs" />
+    <Compile Include="MapperPermisos.cs" />
+    <Compile Include="mapperSector.cs" />
     <Compile Include="MapperUsusario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

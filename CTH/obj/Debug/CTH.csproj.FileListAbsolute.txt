@@ -31,10 +31,13 @@ C:\Projects\Campo2021\CTH\bin\Debug\CTH.Servicios.pdb
 C:\Projects\Campo2021\CTH\bin\Debug\CTH.DAL.pdb
 C:\Projects\Campo2021\CTH\obj\Debug\CTH.csproj.AssemblyReference.cache
 C:\Projects\Campo2021\CTH\obj\Debug\CTH.CTH_home.resources
-C:\Projects\Campo2021\CTH\obj\Debug\CTH.Frm_Login.resources
 C:\Projects\Campo2021\CTH\obj\Debug\CTH.Properties.Resources.resources
 C:\Projects\Campo2021\CTH\obj\Debug\CTH.csproj.GenerateResource.cache
 C:\Projects\Campo2021\CTH\obj\Debug\CTH.csproj.CoreCompileInputs.cache
 C:\Projects\Campo2021\CTH\obj\Debug\CTH.csproj.CopyComplete
 C:\Projects\Campo2021\CTH\obj\Debug\CTH.exe
 C:\Projects\Campo2021\CTH\obj\Debug\CTH.pdb
+C:\Projects\Campo2021\CTH\obj\Debug\CTH.Frm_Login.resources
+C:\Projects\Campo2021\CTH\obj\Debug\CTH.frmUsuarios.resources
+C:\Projects\Campo2021\CTH\obj\Debug\CTH.frmPatentesFamilias.resources
+C:\Projects\Campo2021\CTH\obj\Debug\CTH.NuevaOT.resources

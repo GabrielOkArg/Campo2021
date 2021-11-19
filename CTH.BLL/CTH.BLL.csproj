@@ -41,8 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssistanPermisos.cs" />
+    <Compile Include="AssistanSector.cs" />
     <Compile Include="AssistanSession.cs" />
+    <Compile Include="AssitanOT.cs" />
+    <Compile Include="PermisosBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsuarioBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CTH.BE\CTH.BE.csproj">

@@ -48,5 +48,116 @@ namespace CTH.DAL
             
         }
 
+        private string GetConnectionString()
+        {
+            var cs = new SqlConnectionStringBuilder();
+            cs.IntegratedSecurity = true;
+            cs.DataSource = "EDUARDOSILVA1\\SQLEXPRESS01";
+            cs.InitialCatalog = "CTH_INT";
+            return cs.ConnectionString;
+        }
+
+        public List<UsuarioView> GetAllS()
+        {
+            var cnn = new SqlConnection(GetConnectionString());
+            cnn.Open();
+            var cmd = new SqlCommand();
+            cmd.Connection = cnn;
+
+            var sql = $@"select * from usuarios;";
+
+            cmd.CommandText = sql;
+
+            var reader = cmd.ExecuteReader();
+
+            var lista = new List<UsuarioView>();
+
+            while (reader.Read())
+            {
+                UsuarioView c = new UsuarioView();
+                c.username = reader.GetString(reader.GetOrdinal("username"));
+                c.Id = reader.GetInt32(reader.GetOrdinal("id"));
+                lista.Add(c);
+            }
+            reader.Close();
+            cnn.Close();
+
+            return lista;
+        }
+
+
+
+        public void GuardarPermisos(UsuarioView u)
+        {
+
+            try
+            {
+                var cnn = new SqlConnection(GetConnectionString());
+                cnn.Open();
+
+                var cmd = new SqlCommand();
+                cmd.Connection = cnn;
+
+                cmd.CommandText = $@"delete from usuarios_permisos where id_usuario=@id;";
+                cmd.Parameters.Add(new SqlParameter("id", u.Id));
+                cmd.ExecuteNonQuery();
+
+                foreach (var item in u.Permisos)
+                {
+                    cmd = new SqlCommand();
+                    cmd.Connection = cnn;
+
+                    cmd.CommandText = $@"insert into usuarios_permisos (id_usuario,id_permiso) values (@id_usuario,@id_permiso) "; ;
+                    cmd.Parameters.Add(new SqlParameter("id_usuario", u.Id));
+                    cmd.Parameters.Add(new SqlParameter("id_permiso", item.Id));
+
+                    cmd.ExecuteNonQuery();
+                }
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+
+
+        public void GuardarPermisos(Usuario u)
+        {
+
+            try
+            {
+                var cnn = new SqlConnection(GetConnectionString());
+                cnn.Open();
+
+                var cmd = new SqlCommand();
+                cmd.Connection = cnn;
+
+                cmd.CommandText = $@"delete from usuarios_permisos where id_usuario=@id;";
+                cmd.Parameters.Add(new SqlParameter("id", u.id));
+                cmd.ExecuteNonQuery();
+
+                foreach (var item in u.Permisos)
+                {
+                    cmd = new SqlCommand();
+                    cmd.Connection = cnn;
+
+                    cmd.CommandText = $@"insert into usuarios_permisos (id_usuario,id_permiso) values (@id_usuario,@id_permiso) "; ;
+                    cmd.Parameters.Add(new SqlParameter("id_usuario", u.id));
+                    cmd.Parameters.Add(new SqlParameter("id_permiso", item.Id));
+
+                    cmd.ExecuteNonQuery();
+                }
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
     }
 }

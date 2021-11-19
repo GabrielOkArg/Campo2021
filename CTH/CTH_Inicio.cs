@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CTH.Servicios;
+using CTH.BE;
 
 namespace CTH
 {
@@ -18,6 +19,8 @@ namespace CTH
             InitializeComponent();
             IsMdiContainer = true;
             cerrarSesionToolStripMenuItem.Visible = false;
+            treeHome.Visible = false;
+            ocualtarMenuInicio();
         }
 
         private void iniciarSesionToolStripMenuItem_Click(object sender, EventArgs e)
@@ -25,11 +28,40 @@ namespace CTH
             Frm_Login frm_Login = new Frm_Login();
             frm_Login.MdiParent = this;
             frm_Login.Show();
+      
         }
 
         private void CTH_home_Load(object sender, EventArgs e)
         {
             
+        }
+
+        void MostrarPermisos(Usuario u)
+        {
+            this.treeHome.Nodes.Clear();
+            TreeNode root = new TreeNode(u.getUserName);
+
+            foreach (var item in u.Permisos)
+            {
+                LlenarTreeView(root, item);
+            }
+
+            this.treeHome.Nodes.Add(root);
+            this.treeHome.ExpandAll();
+            treeHome.Visible = true;
+        }
+
+        void LlenarTreeView(TreeNode padre, Componente c)
+        {
+            TreeNode hijo = new TreeNode(c.Nombre);
+            hijo.Tag = c;
+            padre.Nodes.Add(hijo);
+
+            foreach (var item in c.Hijos)
+            {
+                LlenarTreeView(hijo, item);
+            }
+
         }
 
         public void Validar()
@@ -41,6 +73,8 @@ namespace CTH
                 lbl_usuarioconectado.Visible = true;
                 iniciarSesionToolStripMenuItem.Visible = false;
                 cerrarSesionToolStripMenuItem.Visible = true;
+                MostrarPermisos(SessionManager.GetInstance.Usuario);
+                ValidarPermisos();
             }
             else
             {
@@ -48,17 +82,64 @@ namespace CTH
             }
         }
 
+        private void ValidarPermisos()
+        {
+            this.InicioSolicitante.Visible = SessionManager.GetInstance.IsInRole(TipoPermiso.Solicitante);
+            this.inicioAgente.Visible = SessionManager.GetInstance.IsInRole(TipoPermiso.Agente);
+            this.inicioCoordinador.Visible = SessionManager.GetInstance.IsInRole(TipoPermiso.Coordinador);
+            this.inicioJefeTecnico.Visible = SessionManager.GetInstance.IsInRole(TipoPermiso.JefeTecnico);
+            this.configuracionToolStripMenuItem.Visible = SessionManager.GetInstance.IsInRole(TipoPermiso.Administrador);
+        }
+         private void ocualtarMenuInicio()
+        {
+            InicioSolicitante.Visible = false;
+            inicioAgente.Visible = false;
+            inicioCoordinador.Visible = false;
+            inicioJefeTecnico.Visible = false;
+            configuracionToolStripMenuItem.Visible = false;
+        }
         private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SessionManager.Logout();
             cerrarSesionToolStripMenuItem.Visible = false;
             iniciarSesionToolStripMenuItem.Visible = true;
             lbl_usuarioconectado.Text = "";
+            ocualtarMenuInicio();
         }
 
         private void lbl_usuarioconectado_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmUsuarios frm = new frmUsuarios();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void patentesYFamiliasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPatentesFamilias frm = new frmPatentesFamilias();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            treeHome.Visible = false;
+        }
+
+        private void oTNuevasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nuevaOrdenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NuevaOT nuevaOT = new NuevaOT();
+            nuevaOT.Show();
         }
     }
 }

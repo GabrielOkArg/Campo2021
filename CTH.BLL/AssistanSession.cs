@@ -14,7 +14,11 @@ namespace CTH.BLL
 
         private Usuario _usuario_;
         private string _pass_;
-
+        AssistanPermisos _assistanPermisos;
+        public AssistanSession()
+        {
+            _assistanPermisos = new AssistanPermisos();
+        }
         public void GetUsuario(string username, string pass)
         {
             _pass_ = pass;
@@ -34,7 +38,9 @@ namespace CTH.BLL
                 {
                     if (passMD5 == _usuario_.pass)
                     {
+
                         SessionManager.Login(_usuario_);
+                        _assistanPermisos.FillUserComponents(SessionManager.GetInstance.Usuario);
                     }
                 }else
                 {

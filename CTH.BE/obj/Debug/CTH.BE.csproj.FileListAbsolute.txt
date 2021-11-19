@@ -3,3 +3,9 @@ D:\Project\Trabajo de campo\CTH\CTH\CTH.BE\bin\Debug\CTH.BE.pdb
 D:\Project\Trabajo de campo\CTH\CTH\CTH.BE\obj\Debug\CTH.BE.csproj.CoreCompileInputs.cache
 D:\Project\Trabajo de campo\CTH\CTH\CTH.BE\obj\Debug\CTH.BE.dll
 D:\Project\Trabajo de campo\CTH\CTH\CTH.BE\obj\Debug\CTH.BE.pdb
+C:\Projects\Campo2021\CTH.BE\bin\Debug\CTH.BE.dll
+C:\Projects\Campo2021\CTH.BE\bin\Debug\CTH.BE.pdb
+C:\Projects\Campo2021\CTH.BE\obj\Debug\CTH.BE.csproj.AssemblyReference.cache
+C:\Projects\Campo2021\CTH.BE\obj\Debug\CTH.BE.csproj.CoreCompileInputs.cache
+C:\Projects\Campo2021\CTH.BE\obj\Debug\CTH.BE.dll
+C:\Projects\Campo2021\CTH.BE\obj\Debug\CTH.BE.pdb

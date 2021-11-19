@@ -67,19 +67,46 @@
     <Compile Include="CTH_Inicio.Designer.cs">
       <DependentUpon>CTH_Inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPatentesFamilias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatentesFamilias.Designer.cs">
+      <DependentUpon>frmPatentesFamilias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuarios.Designer.cs">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_Login.Designer.cs">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="NuevaOT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevaOT.Designer.cs">
+      <DependentUpon>NuevaOT.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CTH_Inicio.resx">
       <DependentUpon>CTH_Inicio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPatentesFamilias.resx">
+      <DependentUpon>frmPatentesFamilias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevaOT.resx">
+      <DependentUpon>NuevaOT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

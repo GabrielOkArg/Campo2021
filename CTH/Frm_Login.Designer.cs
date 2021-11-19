@@ -1,4 +1,5 @@
-﻿namespace CTH
+﻿
+namespace CTH
 {
     partial class Frm_Login
     {
@@ -28,81 +29,83 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_aceptar = new System.Windows.Forms.Button();
-            this.btn_cancelar = new System.Windows.Forms.Button();
-            this.txt_usuario = new System.Windows.Forms.TextBox();
-            this.txt_pass = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.lblContra = new System.Windows.Forms.Label();
+            this.txtContra = new System.Windows.Forms.TextBox();
+            this.Aceptar = new System.Windows.Forms.Button();
+            this.Cancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btn_aceptar
+            // lblUsuario
             // 
-            this.btn_aceptar.Location = new System.Drawing.Point(27, 163);
-            this.btn_aceptar.Name = "btn_aceptar";
-            this.btn_aceptar.Size = new System.Drawing.Size(111, 36);
-            this.btn_aceptar.TabIndex = 0;
-            this.btn_aceptar.Text = "Aceptar";
-            this.btn_aceptar.UseVisualStyleBackColor = true;
-            this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Platform Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Location = new System.Drawing.Point(23, 35);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(57, 20);
+            this.lblUsuario.TabIndex = 0;
+            this.lblUsuario.Text = "Usuario";
             // 
-            // btn_cancelar
+            // txtUsuario
             // 
-            this.btn_cancelar.Location = new System.Drawing.Point(173, 163);
-            this.btn_cancelar.Name = "btn_cancelar";
-            this.btn_cancelar.Size = new System.Drawing.Size(111, 36);
-            this.btn_cancelar.TabIndex = 1;
-            this.btn_cancelar.Text = "Cancelar";
-            this.btn_cancelar.UseVisualStyleBackColor = true;
+            this.txtUsuario.Location = new System.Drawing.Point(26, 65);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(233, 20);
+            this.txtUsuario.TabIndex = 1;
             // 
-            // txt_usuario
+            // lblContra
             // 
-            this.txt_usuario.BackColor = System.Drawing.Color.White;
-            this.txt_usuario.Location = new System.Drawing.Point(27, 54);
-            this.txt_usuario.Name = "txt_usuario";
-            this.txt_usuario.Size = new System.Drawing.Size(257, 20);
-            this.txt_usuario.TabIndex = 2;
+            this.lblContra.AutoSize = true;
+            this.lblContra.Font = new System.Drawing.Font("Platform Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContra.Location = new System.Drawing.Point(26, 104);
+            this.lblContra.Name = "lblContra";
+            this.lblContra.Size = new System.Drawing.Size(79, 20);
+            this.lblContra.TabIndex = 2;
+            this.lblContra.Text = "Contraseña";
             // 
-            // txt_pass
+            // txtContra
             // 
-            this.txt_pass.Location = new System.Drawing.Point(27, 104);
-            this.txt_pass.Name = "txt_pass";
-            this.txt_pass.PasswordChar = '*';
-            this.txt_pass.Size = new System.Drawing.Size(257, 20);
-            this.txt_pass.TabIndex = 3;
+            this.txtContra.Location = new System.Drawing.Point(26, 134);
+            this.txtContra.Name = "txtContra";
+            this.txtContra.PasswordChar = '+';
+            this.txtContra.Size = new System.Drawing.Size(233, 20);
+            this.txtContra.TabIndex = 3;
             // 
-            // label1
+            // Aceptar
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Usuario";
+            this.Aceptar.Font = new System.Drawing.Font("Platform Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Aceptar.Location = new System.Drawing.Point(29, 194);
+            this.Aceptar.Name = "Aceptar";
+            this.Aceptar.Size = new System.Drawing.Size(75, 38);
+            this.Aceptar.TabIndex = 4;
+            this.Aceptar.Text = "Aceptar";
+            this.Aceptar.UseVisualStyleBackColor = true;
+            this.Aceptar.Click += new System.EventHandler(this.Aceptar_Click);
             // 
-            // label2
+            // Cancelar
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Contraseña";
+            this.Cancelar.Font = new System.Drawing.Font("Platform Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cancelar.Location = new System.Drawing.Point(184, 194);
+            this.Cancelar.Name = "Cancelar";
+            this.Cancelar.Size = new System.Drawing.Size(75, 38);
+            this.Cancelar.TabIndex = 5;
+            this.Cancelar.Text = "Cancelar";
+            this.Cancelar.UseVisualStyleBackColor = true;
             // 
             // Frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(348, 252);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txt_pass);
-            this.Controls.Add(this.txt_usuario);
-            this.Controls.Add(this.btn_cancelar);
-            this.Controls.Add(this.btn_aceptar);
+            this.ClientSize = new System.Drawing.Size(287, 285);
+            this.Controls.Add(this.Cancelar);
+            this.Controls.Add(this.Aceptar);
+            this.Controls.Add(this.txtContra);
+            this.Controls.Add(this.lblContra);
+            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.lblUsuario);
             this.Name = "Frm_Login";
-            this.Text = "Bienvenido";
+            this.Text = "Frm_Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,11 +113,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btn_aceptar;
-        private System.Windows.Forms.Button btn_cancelar;
-        private System.Windows.Forms.TextBox txt_usuario;
-        private System.Windows.Forms.TextBox txt_pass;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.Label lblContra;
+        private System.Windows.Forms.TextBox txtContra;
+        private System.Windows.Forms.Button Aceptar;
+        private System.Windows.Forms.Button Cancelar;
     }
 }
