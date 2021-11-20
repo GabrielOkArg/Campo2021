@@ -19,7 +19,7 @@ namespace CTH.DAL
         public Usuario GetElement(Usuario _element)
         {
         
-            string sqlstring = "Data Source=EDUARDOSILVA1\\SQLEXPRESS01;Initial Catalog=CTH_INT;Integrated Security=True";
+            string sqlstring = "Data Source=DESKTOP-N6CNO7F\\SQLEXPRESS;Initial Catalog=CTH_INT;Integrated Security=True";
             using (SqlConnection conn = new SqlConnection(sqlstring))
 
             {
@@ -48,11 +48,41 @@ namespace CTH.DAL
             
         }
 
+        public List<Usuario> GetAgentes()
+        {
+            List<Usuario> listado = new List<Usuario>();
+            string sqlstring = "Data Source=DESKTOP-N6CNO7F\\SQLEXPRESS;Initial Catalog=CTH_INT;Integrated Security=True";
+            using (SqlConnection conn = new SqlConnection(sqlstring))
+
+            {
+                SqlCommand cdm = new SqlCommand("getAgentes", conn);
+                cdm.CommandType = CommandType.StoredProcedure;
+                cdm.CommandText = "getAgentes"; //nombre del store procedure
+                DataTable dataTable = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cdm);
+                conn.Open();
+                da.Fill(dataTable);
+                conn.Close();
+                for (int i = 0; i < dataTable.Rows.Count; i++)
+                {
+                    Usuario usuario = new Usuario();
+                    usuario.apellido = dataTable.Rows[i].ItemArray[2].ToString();
+                    usuario.nombre = dataTable.Rows[i].ItemArray[1].ToString();
+                    usuario.id = Convert.ToInt32(dataTable.Rows[i].ItemArray[0]);
+                    //usuario.pass = dataTable.Rows[0].ItemArray[i].ToString();
+                    listado.Add(usuario);
+
+                }
+               
+            }
+            return listado;
+        }
+
         private string GetConnectionString()
         {
             var cs = new SqlConnectionStringBuilder();
             cs.IntegratedSecurity = true;
-            cs.DataSource = "EDUARDOSILVA1\\SQLEXPRESS01";
+            cs.DataSource = "DESKTOP-N6CNO7F\\SQLEXPRESS";
             cs.InitialCatalog = "CTH_INT";
             return cs.ConnectionString;
         }

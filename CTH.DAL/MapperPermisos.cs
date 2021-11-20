@@ -21,7 +21,7 @@ namespace CTH.DAL
         {
             var cs = new SqlConnectionStringBuilder();
             cs.IntegratedSecurity = true;
-            cs.DataSource = "EDUARDOSILVA1\\SQLEXPRESS01";
+            cs.DataSource = "DESKTOP-N6CNO7F\\SQLEXPRESS";
             cs.InitialCatalog = "CTH_INT";
             return cs.ConnectionString;
         }
@@ -191,7 +191,7 @@ namespace CTH.DAL
 
             var cs = new SqlConnectionStringBuilder();
             cs.IntegratedSecurity = true;
-            cs.DataSource = "EDUARDOSILVA1\\SQLEXPRESS01";
+            cs.DataSource = "DESKTOP-N6CNO7F\\SQLEXPRESS";
             cs.InitialCatalog = "CTH_INT";
             var cnn = new SqlConnection(cs.ConnectionString);
             cnn.Open();

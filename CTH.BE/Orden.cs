@@ -12,8 +12,8 @@ namespace CTH.BE
 
         public int id { get; set; }
         public DateTime fechaCreacion { get; set; }
-        public DateTime fechaFinalizado { get; set; }
-        public DateTime fechaCierre { get; set; }
+        public DateTime? fechaFinalizado { get; set; }
+        public DateTime? fechaCierre { get; set; }
         public string  solicitante { get; set; }
         public string coordinador { get; set; }
         public string agente { get; set; }
@@ -25,5 +25,10 @@ namespace CTH.BE
         public bool cierre { get; set; }
         public string urgencia { get; set; }
         public int id_solicitante { get; set; }
+        public int tiempo { get; set; }
+        public bool asignada { get; set; }
+        public string estado { get; set; }
+        public int id_agente { get; set; }
+        public string comentario_tecnico { get; set; }
     }
 }

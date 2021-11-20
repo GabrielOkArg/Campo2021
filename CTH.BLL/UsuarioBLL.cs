@@ -28,5 +28,9 @@ namespace CTH.BLL
         {
             return _usuarios.GetAllS();
         }
+        public List<Usuario> GetAgentes()
+        {
+            return _usuarios.GetAgentes();
+        }
     }
 }

@@ -20,3 +20,14 @@ C:\Projects\Campo2021\CTH.Servicios\obj\Debug\CTH.Servicios.csproj.CoreCompileIn
 C:\Projects\Campo2021\CTH.Servicios\obj\Debug\CTH.Servicios.csproj.CopyComplete
 C:\Projects\Campo2021\CTH.Servicios\obj\Debug\CTH.Servicios.dll
 C:\Projects\Campo2021\CTH.Servicios\obj\Debug\CTH.Servicios.pdb
+C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.Servicios\bin\Debug\CTH.Servicios.dll
+C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.Servicios\bin\Debug\CTH.Servicios.pdb
+C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.Servicios\bin\Debug\CTH.BE.dll
+C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.Servicios\bin\Debug\CTH.DAL.dll
+C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.Servicios\bin\Debug\CTH.BE.pdb
+C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.Servicios\bin\Debug\CTH.DAL.pdb
+C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.Servicios\obj\Debug\CTH.Servicios.csprojAssemblyReference.cache
+C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.Servicios\obj\Debug\CTH.Servicios.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.Servicios\obj\Debug\CTH.Servicios.csproj.CopyComplete
+C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.Servicios\obj\Debug\CTH.Servicios.dll
+C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.Servicios\obj\Debug\CTH.Servicios.pdb

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using CTH.BE;
 using CTH.BLL;
 using CTH.Servicios;
+using CTH.Servicios.Enums;
 
 namespace CTH
 {
@@ -58,6 +59,7 @@ namespace CTH
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             Orden orden = new Orden();
+            orden.estado = "Abierto";
             orden.solicitante = SessionManager.GetInstance.Usuario.getFullName;
             orden.fechaCreacion = DateTime.Now;
             orden.sector = cmbSector.SelectedValue.ToString();

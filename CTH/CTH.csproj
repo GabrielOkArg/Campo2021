@@ -67,11 +67,35 @@
     <Compile Include="CTH_Inicio.Designer.cs">
       <DependentUpon>CTH_Inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCoordinadornuevas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCoordinadornuevas.Designer.cs">
+      <DependentUpon>frmCoordinadornuevas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmdetallecoordinador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdetallecoordinador.Designer.cs">
+      <DependentUpon>frmdetallecoordinador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetalleSolicitante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalleSolicitante.Designer.cs">
+      <DependentUpon>frmDetalleSolicitante.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPatentesFamilias.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPatentesFamilias.Designer.cs">
       <DependentUpon>frmPatentesFamilias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSolicitante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSolicitante.Designer.cs">
+      <DependentUpon>frmSolicitante.cs</DependentUpon>
     </Compile>
     <Compile Include="frmUsuarios.cs">
       <SubType>Form</SubType>
@@ -96,8 +120,20 @@
     <EmbeddedResource Include="CTH_Inicio.resx">
       <DependentUpon>CTH_Inicio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCoordinadornuevas.resx">
+      <DependentUpon>frmCoordinadornuevas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdetallecoordinador.resx">
+      <DependentUpon>frmdetallecoordinador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleSolicitante.resx">
+      <DependentUpon>frmDetalleSolicitante.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPatentesFamilias.resx">
       <DependentUpon>frmPatentesFamilias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSolicitante.resx">
+      <DependentUpon>frmSolicitante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUsuarios.resx">
       <DependentUpon>frmUsuarios.cs</DependentUpon>
@@ -159,6 +195,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Solicitante\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

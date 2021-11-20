@@ -16,7 +16,7 @@ namespace CTH.DAL
             List<Sector> listado = new List<Sector>();
             try
             {
-                string sqlstring = "Data Source=EDUARDOSILVA1\\SQLEXPRESS01;Initial Catalog=CTH_INT;Integrated Security=True";
+                string sqlstring = "Data Source=DESKTOP-N6CNO7F\\SQLEXPRESS;Initial Catalog=CTH_INT;Integrated Security=True";
                 using (SqlConnection conn = new SqlConnection(sqlstring))
 
                 {
@@ -51,7 +51,7 @@ namespace CTH.DAL
             List<Sector> listado = new List<Sector>();
             try
             {
-                string sqlstring = "Data Source=EDUARDOSILVA1\\SQLEXPRESS01;Initial Catalog=CTH_INT;Integrated Security=True";
+                string sqlstring = "Data Source=DESKTOP-N6CNO7F\\SQLEXPRESS;Initial Catalog=CTH_INT;Integrated Security=True";
                 using (SqlConnection conn = new SqlConnection(sqlstring))
 
                 {

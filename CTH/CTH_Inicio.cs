@@ -88,7 +88,8 @@ namespace CTH
             this.inicioAgente.Visible = SessionManager.GetInstance.IsInRole(TipoPermiso.Agente);
             this.inicioCoordinador.Visible = SessionManager.GetInstance.IsInRole(TipoPermiso.Coordinador);
             this.inicioJefeTecnico.Visible = SessionManager.GetInstance.IsInRole(TipoPermiso.JefeTecnico);
-            this.configuracionToolStripMenuItem.Visible = SessionManager.GetInstance.IsInRole(TipoPermiso.Administrador);
+            //this.configuracionToolStripMenuItem.Visible = SessionManager.GetInstance.IsInRole(TipoPermiso.Administrador);
+            this.configuracionToolStripMenuItem.Visible = true;
         }
          private void ocualtarMenuInicio()
         {
@@ -133,13 +134,20 @@ namespace CTH
 
         private void oTNuevasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmCoordinadornuevas frmCoordinadornuevas = new frmCoordinadornuevas();
+            frmCoordinadornuevas.Show();
         }
 
         private void nuevaOrdenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             NuevaOT nuevaOT = new NuevaOT();
             nuevaOT.Show();
+        }
+
+        private void misOrdenesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSolicitante frmSolicitante = new frmSolicitante();
+            frmSolicitante.Show();
         }
     }
 }

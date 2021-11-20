@@ -18,5 +18,23 @@ namespace CTH.BLL
 
             return mapperOrden.Save(ot);
         }
+
+        public List<Orden> GetByIduser(int id)
+        {
+            mapperOrden mapperOrden = new mapperOrden();
+            return mapperOrden.GetByUser(id);
+        }
+
+        public Orden GetByIdOrden(int id)
+        {
+            mapperOrden mapperOrden = new mapperOrden();
+            return mapperOrden.GetOrdenByID(id);
+        }
+
+        public List<Orden> Getlibres()
+        {
+            mapperOrden mapperOrden = new mapperOrden();
+            return mapperOrden.GetLibres();
+        }
     }
 }
