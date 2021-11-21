@@ -149,5 +149,11 @@ namespace CTH
             frmSolicitante frmSolicitante = new frmSolicitante();
             frmSolicitante.Show();
         }
+
+        private void oTAsignadasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmmisOT frmmisOT = new frmmisOT();
+            frmmisOT.Show();
+        }
     }
 }

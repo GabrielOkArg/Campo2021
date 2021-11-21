@@ -31,7 +31,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iniciarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.patentesYFamiliasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,6 +54,7 @@
             this.agenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lbl_usuarioconectado = new System.Windows.Forms.Label();
             this.treeHome = new System.Windows.Forms.TreeView();
+            this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,14 +92,6 @@
             this.iniciarSesionToolStripMenuItem.Text = "Iniciar Sesion";
             this.iniciarSesionToolStripMenuItem.Click += new System.EventHandler(this.iniciarSesionToolStripMenuItem_Click);
             // 
-            // cerrarSesionToolStripMenuItem
-            // 
-            this.cerrarSesionToolStripMenuItem.BackgroundImage = global::CTH.Properties.Resources.fondo;
-            this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
-            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.cerrarSesionToolStripMenuItem.Text = "Cerrar Sesion";
-            this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
-            // 
             // configuracionToolStripMenuItem
             // 
             this.configuracionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -135,14 +127,14 @@
             // nuevaOrdenToolStripMenuItem
             // 
             this.nuevaOrdenToolStripMenuItem.Name = "nuevaOrdenToolStripMenuItem";
-            this.nuevaOrdenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevaOrdenToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.nuevaOrdenToolStripMenuItem.Text = "Nueva Orden";
             this.nuevaOrdenToolStripMenuItem.Click += new System.EventHandler(this.nuevaOrdenToolStripMenuItem_Click);
             // 
             // misOrdenesToolStripMenuItem
             // 
             this.misOrdenesToolStripMenuItem.Name = "misOrdenesToolStripMenuItem";
-            this.misOrdenesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.misOrdenesToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.misOrdenesToolStripMenuItem.Text = "Mis Ordenes";
             this.misOrdenesToolStripMenuItem.Click += new System.EventHandler(this.misOrdenesToolStripMenuItem_Click);
             // 
@@ -158,13 +150,14 @@
             // oTAsignadasToolStripMenuItem
             // 
             this.oTAsignadasToolStripMenuItem.Name = "oTAsignadasToolStripMenuItem";
-            this.oTAsignadasToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.oTAsignadasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.oTAsignadasToolStripMenuItem.Text = "OT asignadas";
+            this.oTAsignadasToolStripMenuItem.Click += new System.EventHandler(this.oTAsignadasToolStripMenuItem_Click);
             // 
             // oTFinalizadasToolStripMenuItem
             // 
             this.oTFinalizadasToolStripMenuItem.Name = "oTFinalizadasToolStripMenuItem";
-            this.oTFinalizadasToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.oTFinalizadasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.oTFinalizadasToolStripMenuItem.Text = "OT finalizadas";
             // 
             // inicioCoordinador
@@ -271,6 +264,14 @@
             this.treeHome.Name = "treeHome";
             this.treeHome.Size = new System.Drawing.Size(425, 215);
             this.treeHome.TabIndex = 2;
+            // 
+            // cerrarSesionToolStripMenuItem
+            // 
+            this.cerrarSesionToolStripMenuItem.BackgroundImage = global::CTH.Properties.Resources.fondo;
+            this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
+            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.cerrarSesionToolStripMenuItem.Text = "Cerrar Sesion";
+            this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
             // 
             // CTH_home
             // 

@@ -59,6 +59,25 @@ namespace CTH.DAL
             return result;
         }
 
+        public void AsignarAgente(Orden orden)
+        {
+            using(SqlConnection conn = new SqlConnection(sqlstring))
+            {
+                SqlCommand cdm = new SqlCommand("AsignarAgente", conn);
+                cdm.CommandType = CommandType.StoredProcedure;
+                cdm.CommandText = "AsignarAgente";
+                cdm.Parameters.Add("@agente", SqlDbType.NVarChar).Value = orden.agente;
+                cdm.Parameters.Add("@id_agente", SqlDbType.Int).Value = orden.id_agente;
+                cdm.Parameters.Add("@id_orden", SqlDbType.Int).Value = orden.id;
+                cdm.Parameters.Add("@asignada", SqlDbType.Bit).Value = orden.asignada;
+                DataTable dataTable = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cdm);
+                conn.Open();
+                cdm.ExecuteNonQuery();
+                conn.Close();
+            }
+        }
+
         public List<Orden> GetLibres()
         {
             List<Orden> listado = new List<Orden>();
@@ -67,6 +86,51 @@ namespace CTH.DAL
                 SqlCommand cdm = new SqlCommand("getOrdenLibre", conn);
                 cdm.CommandType = CommandType.StoredProcedure;
                 cdm.CommandText = "getOrdenLibre";
+                DataTable dataTable = new DataTable();
+                SqlDataAdapter sa = new SqlDataAdapter(cdm);
+                conn.Open();
+                sa.Fill(dataTable);
+                conn.Close();
+
+
+                foreach (DataRow item in dataTable.Rows)
+                {
+                    Orden orden = new Orden();
+                    orden.id = Convert.ToInt32(item.ItemArray[0].ToString());
+                    orden.fechaCreacion = Convert.ToDateTime(item.ItemArray[1]);
+                    orden.fechaCierre = (item.ItemArray[2] == DBNull.Value ? (DateTime?)null : Convert.ToDateTime(item.ItemArray[2]));
+                    orden.fechaFinalizado = (item.ItemArray[3] == DBNull.Value ? (DateTime?)null : Convert.ToDateTime(item.ItemArray[3]));
+                    orden.solicitante = item.ItemArray[4].ToString();
+                    orden.coordinador = item.ItemArray[5].ToString();
+                    orden.agente = item.ItemArray[6].ToString();
+                    orden.descripcion = item.ItemArray[7].ToString();
+                    orden.sector = item.ItemArray[8].ToString();
+                    orden.equipo = Convert.ToInt32(item.ItemArray[9].ToString());
+                    orden.terminada = Convert.ToBoolean(item.ItemArray[10]);
+                    orden.finalizada = Convert.ToBoolean(item.ItemArray[11]);
+                    orden.cierre = Convert.ToBoolean(item.ItemArray[12]);
+                    orden.urgencia = item.ItemArray[13].ToString();
+                    orden.id_solicitante = Convert.ToInt32(item.ItemArray[14].ToString());
+                    orden.tiempo = Convert.ToInt32(item.ItemArray[15]);
+                    orden.asignada = Convert.ToBoolean(item.ItemArray[16]);
+                    orden.estado = item.ItemArray[17].ToString();
+                    listado.Add(orden);
+
+                }
+            }
+
+            return listado.ToList();
+        }
+
+        public List<Orden> GetByAgente(int id)
+        {
+            List<Orden> listado = new List<Orden>();
+            using (SqlConnection conn = new SqlConnection(sqlstring))
+            {
+                SqlCommand cdm = new SqlCommand("GetOrdenesByAgente", conn);
+                cdm.CommandType = CommandType.StoredProcedure;
+                cdm.CommandText = "GetOrdenesByAgente";
+                cdm.Parameters.Add("@id", SqlDbType.Int).Value = id;
                 DataTable dataTable = new DataTable();
                 SqlDataAdapter sa = new SqlDataAdapter(cdm);
                 conn.Open();

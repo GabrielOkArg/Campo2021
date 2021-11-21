@@ -36,5 +36,18 @@ namespace CTH.BLL
             mapperOrden mapperOrden = new mapperOrden();
             return mapperOrden.GetLibres();
         }
+
+        public void AsignarAgente(Orden orden )
+        {
+            mapperOrden mapperOrden = new mapperOrden();
+            mapperOrden.AsignarAgente(orden);
+
+        }
+
+        public List<Orden> getByAgente(int id)
+        {
+            mapperOrden mapperOrden = new mapperOrden();
+            return mapperOrden.GetByAgente(id);
+        }
     }
 }

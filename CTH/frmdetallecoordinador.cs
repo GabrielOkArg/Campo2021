@@ -20,9 +20,9 @@ namespace CTH
         {
             InitializeComponent();
             UsuarioBLL usuarioBLL = new UsuarioBLL();
-            comboBox1.DisplayMember = "getFullName";
-            comboBox1.ValueMember = "id";
-            comboBox1.DataSource = usuarioBLL.GetAgentes();
+            cmbAgentes.DisplayMember = "getFullName";
+            cmbAgentes.ValueMember = "id";
+            cmbAgentes.DataSource = usuarioBLL.GetAgentes();
             label1.Text += SessionManager.GetInstance.Usuario.getFullName;
             AssitanOT assitanOT = new AssitanOT();
             _orden = assitanOT.GetByIdOrden(id);
@@ -49,6 +49,23 @@ namespace CTH
                 default:
                     break;
             }
+        }
+
+        private void btnAsignar_Click(object sender, EventArgs e)
+        {
+            Usuario agente = (Usuario)cmbAgentes.SelectedItem;
+            _orden.agente = agente.getFullName;
+            _orden.id_agente = agente.id;
+            lblagente.Text = _orden.agente;
+        }
+
+        private void btnguardar_Click(object sender, EventArgs e)
+        {
+            AssitanOT assitanOT = new AssitanOT();
+            _orden.asignada = true;
+            _orden.coordinador = SessionManager.GetInstance.Usuario.getUserName;
+            assitanOT.AsignarAgente(_orden);
+            MessageBox.Show("Agente asignando con exito");
         }
     }
 }

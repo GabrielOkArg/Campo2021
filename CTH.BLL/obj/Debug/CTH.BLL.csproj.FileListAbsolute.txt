@@ -17,6 +17,7 @@ C:\Projects\Campo2021\CTH.BLL\obj\Debug\CTH.BLL.csproj.CoreCompileInputs.cache
 C:\Projects\Campo2021\CTH.BLL\obj\Debug\CTH.BLL.csproj.CopyComplete
 C:\Projects\Campo2021\CTH.BLL\obj\Debug\CTH.BLL.dll
 C:\Projects\Campo2021\CTH.BLL\obj\Debug\CTH.BLL.pdb
+C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.BLL\obj\Debug\CTH.BLL.csproj.CoreCompileInputs.cache
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.BLL\bin\Debug\CTH.BLL.dll
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.BLL\bin\Debug\CTH.BLL.pdb
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.BLL\bin\Debug\CTH.BE.dll
@@ -26,7 +27,6 @@ C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.BLL\bin\Debug\CTH.BE.pdb
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.BLL\bin\Debug\CTH.DAL.pdb
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.BLL\bin\Debug\CTH.Servicios.pdb
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.BLL\obj\Debug\CTH.BLL.csprojAssemblyReference.cache
-C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.BLL\obj\Debug\CTH.BLL.csproj.CoreCompileInputs.cache
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.BLL\obj\Debug\CTH.BLL.csproj.CopyComplete
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.BLL\obj\Debug\CTH.BLL.dll
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.BLL\obj\Debug\CTH.BLL.pdb

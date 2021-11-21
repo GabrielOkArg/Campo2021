@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnAsignar = new System.Windows.Forms.Button();
+            this.cmbAgentes = new System.Windows.Forms.ComboBox();
             this.lblAsignado = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnguardar = new System.Windows.Forms.Button();
@@ -42,6 +42,8 @@
             this.txtdescripcion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblurgencia = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblagente = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -49,21 +51,13 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnAsignar);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cmbAgentes);
             this.groupBox1.Location = new System.Drawing.Point(23, 258);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(452, 100);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Asignacion de agente";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(7, 33);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(199, 21);
-            this.comboBox1.TabIndex = 0;
             // 
             // btnAsignar
             // 
@@ -73,6 +67,15 @@
             this.btnAsignar.TabIndex = 1;
             this.btnAsignar.Text = "Asignar";
             this.btnAsignar.UseVisualStyleBackColor = true;
+            this.btnAsignar.Click += new System.EventHandler(this.btnAsignar_Click);
+            // 
+            // cmbAgentes
+            // 
+            this.cmbAgentes.FormattingEnabled = true;
+            this.cmbAgentes.Location = new System.Drawing.Point(7, 33);
+            this.cmbAgentes.Name = "cmbAgentes";
+            this.cmbAgentes.Size = new System.Drawing.Size(199, 21);
+            this.cmbAgentes.TabIndex = 0;
             // 
             // lblAsignado
             // 
@@ -100,6 +103,7 @@
             this.btnguardar.TabIndex = 3;
             this.btnguardar.Text = "Guardar";
             this.btnguardar.UseVisualStyleBackColor = true;
+            this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
             // lblfechacreado
             // 
@@ -173,11 +177,30 @@
             this.lblurgencia.Size = new System.Drawing.Size(0, 13);
             this.lblurgencia.TabIndex = 10;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(521, 121);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(90, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Agente asignado:";
+            // 
+            // lblagente
+            // 
+            this.lblagente.AutoSize = true;
+            this.lblagente.Location = new System.Drawing.Point(524, 153);
+            this.lblagente.Name = "lblagente";
+            this.lblagente.Size = new System.Drawing.Size(0, 13);
+            this.lblagente.TabIndex = 12;
+            // 
             // frmdetallecoordinador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblagente);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.lblurgencia);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox2);
@@ -203,7 +226,7 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnAsignar;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbAgentes;
         private System.Windows.Forms.Label lblAsignado;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnguardar;
@@ -215,5 +238,7 @@
         private System.Windows.Forms.TextBox txtdescripcion;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblurgencia;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblagente;
     }
 }

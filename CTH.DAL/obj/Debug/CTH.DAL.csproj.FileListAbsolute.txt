@@ -16,12 +16,12 @@ C:\Projects\Campo2021\CTH.DAL\obj\Debug\CTH.DAL.csproj.CoreCompileInputs.cache
 C:\Projects\Campo2021\CTH.DAL\obj\Debug\CTH.DAL.csproj.CopyComplete
 C:\Projects\Campo2021\CTH.DAL\obj\Debug\CTH.DAL.dll
 C:\Projects\Campo2021\CTH.DAL\obj\Debug\CTH.DAL.pdb
+C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.DAL\obj\Debug\CTH.DAL.csprojAssemblyReference.cache
+C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.DAL\obj\Debug\CTH.DAL.csproj.CoreCompileInputs.cache
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.DAL\bin\Debug\CTH.DAL.dll
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.DAL\bin\Debug\CTH.DAL.pdb
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.DAL\bin\Debug\CTH.BE.dll
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.DAL\bin\Debug\CTH.BE.pdb
-C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.DAL\obj\Debug\CTH.DAL.csprojAssemblyReference.cache
-C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.DAL\obj\Debug\CTH.DAL.csproj.CoreCompileInputs.cache
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.DAL\obj\Debug\CTH.DAL.csproj.CopyComplete
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.DAL\obj\Debug\CTH.DAL.dll
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH.DAL\obj\Debug\CTH.DAL.pdb

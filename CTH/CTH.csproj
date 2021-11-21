@@ -67,6 +67,12 @@
     <Compile Include="CTH_Inicio.Designer.cs">
       <DependentUpon>CTH_Inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmActualizarAgenteOT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActualizarAgenteOT.Designer.cs">
+      <DependentUpon>frmActualizarAgenteOT.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCoordinadornuevas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,12 @@
     </Compile>
     <Compile Include="frmDetalleSolicitante.Designer.cs">
       <DependentUpon>frmDetalleSolicitante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmisOT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmisOT.Designer.cs">
+      <DependentUpon>frmmisOT.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPatentesFamilias.cs">
       <SubType>Form</SubType>
@@ -120,6 +132,9 @@
     <EmbeddedResource Include="CTH_Inicio.resx">
       <DependentUpon>CTH_Inicio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmActualizarAgenteOT.resx">
+      <DependentUpon>frmActualizarAgenteOT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCoordinadornuevas.resx">
       <DependentUpon>frmCoordinadornuevas.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDetalleSolicitante.resx">
       <DependentUpon>frmDetalleSolicitante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmisOT.resx">
+      <DependentUpon>frmmisOT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPatentesFamilias.resx">
       <DependentUpon>frmPatentesFamilias.cs</DependentUpon>

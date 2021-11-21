@@ -43,7 +43,10 @@ C:\Projects\Campo2021\CTH\obj\Debug\CTH.frmPatentesFamilias.resources
 C:\Projects\Campo2021\CTH\obj\Debug\CTH.NuevaOT.resources
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH\obj\Debug\CTH.csprojAssemblyReference.cache
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH\obj\Debug\CTH.CTH_home.resources
+C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH\obj\Debug\CTH.frmCoordinadornuevas.resources
+C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH\obj\Debug\CTH.frmdetallecoordinador.resources
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH\obj\Debug\CTH.frmDetalleSolicitante.resources
+C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH\obj\Debug\CTH.frmmisOT.resources
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH\obj\Debug\CTH.frmPatentesFamilias.resources
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH\obj\Debug\CTH.frmSolicitante.resources
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH\obj\Debug\CTH.frmUsuarios.resources
@@ -66,5 +69,4 @@ C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH\bin\Debug\CTH.DAL.pdb
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH\obj\Debug\CTH.csproj.CopyComplete
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH\obj\Debug\CTH.exe
 C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH\obj\Debug\CTH.pdb
-C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH\obj\Debug\CTH.frmCoordinadornuevas.resources
-C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH\obj\Debug\CTH.frmdetallecoordinador.resources
+C:\Users\Gabriel\Desktop\campo entrega 3\Campo2021\CTH\obj\Debug\CTH.frmActualizarAgenteOT.resources
