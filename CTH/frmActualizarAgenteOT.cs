@@ -23,13 +23,21 @@ namespace CTH
             InitializeComponent();
             _equipo = equipo;
             _orden = orden;
+            if (_equipo.id == 0)
+            {
+                btndetalle.Enabled = false;
+                grupoEquipo.Enabled = false;
+            }
+            Console.WriteLine(GlobalOrden.GetOrden.Orden);
             rbAbierta.Checked = !orden.terminada;
+            rbokequipo.Checked = equipo.estado;
+            rbnookequipo.Checked = !equipo.estado;
             btnterminar.Enabled = false;
             this.Text = "Orden de trabajo n°: " + _orden.id;
-            lblid.Text = _orden.id.ToString();
-            lblequipo.Text = _equipo.nombre;
-            lblsector.Text = _orden.sector;
-            lblsolicitante.Text = _orden.solicitante;
+            lblid.Text ="Orden n°: " +_orden.id.ToString();
+            lblequipo.Text = "Equipo: "+ _equipo.nombre;
+            lblsector.Text ="Sector: "+ _orden.sector;
+            lblsolicitante.Text ="Solicitante: "+ _orden.solicitante;
             lblurgencia.Text = _orden.urgencia;
             switch (_orden.urgencia)
             {
@@ -53,6 +61,46 @@ namespace CTH
         private void btndetalleot_Click(object sender, EventArgs e)
         {
             MessageBox.Show(_orden.descripcion, "informacion de orden de trabajo", MessageBoxButtons.OK);
+        }
+
+        private void btnterminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnguardar_Click(object sender, EventArgs e)
+        {
+
+            Orden orden = GlobalOrden.GetOrden.Orden;
+            orden.terminada = false;
+            orden.tiempo += Convert.ToInt32(txthoras.Text);
+            orden.comentario_tecnico += rtxtdetalle.Text +"//" + DateTime.Now.ToString() +"//";
+            GlobalOrden.ClearOrden();
+            GlobalOrden.loadOrden(orden);
+            if (_equipo.id != 0)
+            {
+                _equipo.estado = rbokequipo.Checked == true ? rbokequipo.Checked : rbnookequipo.Checked;
+            }
+            
+        }
+
+        private void btndetalle_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void rbTerminada_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbTerminada.Checked == true)
+            {
+                btnterminar.Enabled = true;
+                btnguardar.Enabled = false;
+            }
+            else
+            {
+                btnterminar.Enabled = false;
+                btnguardar.Enabled = true;
+            }
         }
     }
 }

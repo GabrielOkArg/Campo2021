@@ -16,12 +16,19 @@ namespace CTH
 {
     public partial class frmCoordinadornuevas : Form
     {
+        AssitanOT assitanOT;
         public frmCoordinadornuevas()
         {
             InitializeComponent();
-            AssitanOT assitanOT = new AssitanOT();
+            IsMdiContainer = true;
+            assitanOT = new AssitanOT();
+            LoadOT();            
+        }
+
+        public void LoadOT()
+        {
             dgvnuevas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            
+
             dgvnuevas.DataSource = assitanOT.Getlibres().Select(o => new
             {
                 ID = o.id,
@@ -31,14 +38,19 @@ namespace CTH
                 Estado = o.estado
             }
             ).ToList();
-            
         }
 
         private void btnver_Click(object sender, EventArgs e)
         {
+
             int orden = Convert.ToInt32(dgvnuevas.SelectedRows[0].Cells[0].Value.ToString());
             frmdetallecoordinador frmdetallecoordinador = new frmdetallecoordinador(orden);
             frmdetallecoordinador.Show();
+        }
+
+        private void frmCoordinadornuevas_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

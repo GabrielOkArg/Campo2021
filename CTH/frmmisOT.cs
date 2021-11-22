@@ -34,26 +34,35 @@ namespace CTH
                 }
             }
             dgvot.DataSource = listado;
+            btnActualizar.Enabled = false;
         }
 
         private void dgvot_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            btnActualizar.Enabled = true;
             //arreglar concatenaciones
             _orden = (Orden)dgvot.SelectedRows[0].DataBoundItem;
             _orden = assitanOT.GetByIdOrden(_orden.id);
+            GlobalOrden.loadOrden(_orden);
             _equipo = new Equipo();
             if (_orden.equipo !=0)
             {
                 AssistanEquipo equipo = new AssistanEquipo();
                 _equipo = equipo.GetById(_orden.equipo);
+                GlobalEquipo.loadEquipo(equipo.GetById(_orden.equipo));
                 List<Equipo> equipos = new List<Equipo>();
                 equipos.Add(_equipo);
                 dgvequipo.DataSource = equipos;
             }
-            lblsector.Text += _orden.sector;
-            lblfechasolicitud.Text += _orden.fechaCreacion.ToString("MM/dd/yyyy");
-            lblcoordinador.Text += _orden.coordinador;
+            else
+            {
+                dgvequipo.DataSource = null;
+            }
+            lblsector.Text = "Sector: "+ _orden.sector;
+            lblfechasolicitud.Text ="Solicitado"+ _orden.fechaCreacion.ToString("dd/MM/yyyy");
+            lblcoordinador.Text ="Coordinador: "+ _orden.coordinador;
             lblurgencia.Text = _orden.urgencia;
+            txtdetalle.Text = _orden.descripcion;
             switch (_orden.urgencia)
             {
                 case "Baja":

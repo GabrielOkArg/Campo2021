@@ -27,7 +27,6 @@ namespace CTH
             CTH_home cTH_Home = (CTH_home)this.MdiParent;
             cTH_Home.Validar();
             this.Close();
-            this.Close();
         }
     }
 }

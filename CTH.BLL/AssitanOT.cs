@@ -49,5 +49,10 @@ namespace CTH.BLL
             mapperOrden mapperOrden = new mapperOrden();
             return mapperOrden.GetByAgente(id);
         }
+
+        public void updateOT(Orden orden)
+        {
+
+        }
     }
 }

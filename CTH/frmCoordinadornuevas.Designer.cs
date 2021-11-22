@@ -74,6 +74,7 @@
             this.Controls.Add(this.dgvnuevas);
             this.Name = "frmCoordinadornuevas";
             this.Text = "frmCoordinadornuevas";
+            this.Load += new System.EventHandler(this.frmCoordinadornuevas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvnuevas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

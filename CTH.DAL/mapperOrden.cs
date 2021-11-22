@@ -70,6 +70,7 @@ namespace CTH.DAL
                 cdm.Parameters.Add("@id_agente", SqlDbType.Int).Value = orden.id_agente;
                 cdm.Parameters.Add("@id_orden", SqlDbType.Int).Value = orden.id;
                 cdm.Parameters.Add("@asignada", SqlDbType.Bit).Value = orden.asignada;
+                cdm.Parameters.Add("@coordinador", SqlDbType.NVarChar).Value = orden.coordinador;
                 DataTable dataTable = new DataTable();
                 SqlDataAdapter da = new SqlDataAdapter(cdm);
                 conn.Open();

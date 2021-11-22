@@ -43,6 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Encriptacion.cs" />
+    <Compile Include="GlobalEquipo.cs" />
+    <Compile Include="GlobalOrden.cs" />
     <Compile Include="Tipoestado.cs" />
     <Compile Include="Exceptions\FalloLoginException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

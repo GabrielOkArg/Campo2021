@@ -66,6 +66,7 @@ namespace CTH
             _orden.coordinador = SessionManager.GetInstance.Usuario.getUserName;
             assitanOT.AsignarAgente(_orden);
             MessageBox.Show("Agente asignando con exito");
+            this.Close();
         }
     }
 }
